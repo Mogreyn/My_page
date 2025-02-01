@@ -1,0 +1,57 @@
+/* tech.module.scss */
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.icon:nth-child(1) {
+    animation-delay: 5s;
+}
+
+.icon:nth-child(2) {
+    animation-delay: 5.2s;
+}
+
+.icon:nth-child(3) {
+    animation-delay: 5.4s;
+}
+
+.icon:nth-child(4) {
+    animation-delay: 5.6s;
+}
+
+.icon:nth-child(5) {
+    animation-delay: 5.8s;
+}
+
+.icon:nth-child(6) {
+    animation-delay: 6s;
+}
+
+.icon:nth-child(7) {
+    animation-delay: 6.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

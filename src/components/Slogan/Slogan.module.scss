@@ -1,0 +1,48 @@
+.slogan {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500, #ff1493);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+.text {
+    color: #b5b5b5a4;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 40%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0) 60%);
+    background-size: 200% 100%;
+    font-family: 'Cinzel', serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+.shiny-text.disabled {
+    animation: none;
+}
+
+
+.text:hover {
+    color: #ff7f50;
+}
