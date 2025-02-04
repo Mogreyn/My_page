@@ -1,7 +1,7 @@
 import styles from "./Ed.module.scss";
 import { EdProps } from "./types/Ed.types";
 import EduCard from "@/components/EduCard/EduCard";
-import hilell from "@/assets/images/hillel.png";
+import hilell from "@/assets/images/hillel.jpg";
 
 export default function Ed({}: EdProps) {
   return (
