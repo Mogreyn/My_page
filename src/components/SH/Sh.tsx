@@ -1,43 +1,41 @@
-import styles from "./Tc.module.scss";
-import { TcProps } from "./types/Tc.types";
+import styles from "./Sh.module.scss";
+import { ShProps } from "./types/Sh.types";
 import Image from "next/image";
-import reco from "@/assets/images/reco.png";
-import { FaReact, FaHtml5, FaGithub, FaSass } from "react-icons/fa"; // Для иконок технологий
+import sheroes from "@/assets/images/sheroes.png";
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa"; // Для иконок технологий
 
-export default function Tc({}: TcProps) {
+export default function Sh({}: ShProps) {
   return (
     <div className={styles.XpContainer}>
       <div className={styles.image_container}>
         <Image
           className={styles.image}
-          src={reco}
-          alt="Reco"
+          src={sheroes}
+          alt="School Heroes"
         />
       </div>
-
       <div className={styles.aboutXpContent}>
-        <h2 className={styles.title}>Team Challenge</h2>
-        <p className={styles.date}>Aug 2024 - Dec 2024</p>
+        <h2 className={styles.title}>SH</h2>
+        <p className={styles.date}>Dec 2024 - Present</p>
         <p className={styles.role}>Frontend Developer</p>
         <p className={styles.text}>
-          Project: E-commerce Web Application Onlone Store
+          Project: Heroes&apos; School – Children&apos;s Education Website
         </p>
 
         <div className={styles.achievements}>
           <h3 className={styles.achievementsTitle}>Key Achievements</h3>
           <ul className={styles.achievementsList}>
             <li>
-              Developed a commercial online store using React, Vite, and
-              TypeScript.
+              Developed a web platform for a charitable foundation using React
+              and Material UI.
             </li>
             <li>
-              Built and maintained React components, ensuring performance
-              optimization and responsive design.
+              Built and styled UI components, ensuring accessibility and
+              responsiveness.
             </li>
-            <li>Adapted UI for mobile device.</li>
             <li>
-              Fixed bugs and refactored code under mentor guidance to enhance
-              maintainability.
+              Collaborated with the team to implement new features and enhance
+              user experience.
             </li>
           </ul>
         </div>
@@ -49,7 +47,7 @@ export default function Tc({}: TcProps) {
         <div className={styles.technologyIcons}>
           <FaReact className={styles.icon} />
           <FaHtml5 className={styles.icon} />
-          <FaSass className={styles.icon} />
+          <FaCss3Alt className={styles.icon} />
           <FaGithub className={styles.icon} />
         </div>
       </div>
