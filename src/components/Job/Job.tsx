@@ -5,10 +5,10 @@ import { FaReact, FaHtml5, FaGithub, FaSass } from "react-icons/fa";
 import { JSX } from "react";
 
 const technologyIcons: Record<string, JSX.Element> = {
-  react: <FaReact className={styles.icon} />, 
-  html5: <FaHtml5 className={styles.icon} />, 
-  sass: <FaSass className={styles.icon} />, 
-  github: <FaGithub className={styles.icon} />, 
+  react: <FaReact className={styles.icon} />,
+  html5: <FaHtml5 className={styles.icon} />,
+  sass: <FaSass className={styles.icon} />,
+  github: <FaGithub className={styles.icon} />,
 };
 
 export default function JobCard({
@@ -49,7 +49,9 @@ export default function JobCard({
         <div className={styles.technologies}>
           <h3 className={styles.technologiesTitle}>Technologies Used</h3>
           <div className={styles.technologyIcons}>
-            {technologies.map((tech) => technologyIcons[tech] || null)}
+            {technologies.map((tech, index) => (
+              <div key={index}>{technologyIcons[tech] || null}</div>
+            ))}
           </div>
         </div>
       )}

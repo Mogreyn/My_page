@@ -1,3 +1,5 @@
+@use "@/styles/variables.scss" as *;
+
 @keyframes fadeInHeader {
     0% {
         opacity: 0;
@@ -11,14 +13,13 @@
 }
 
 .header {
-    background: linear-gradient(135deg, #333, #444);
-    color: #fff;
-    padding: 1.5rem;
+    background: $header-color;
+    color: $text-color;
+    padding: $base-padding;
     text-align: left;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: $heading-font-size;
     font-weight: bold;
-    margin-bottom: 1rem;
     border-radius: 20px;
     animation: fadeInHeader 1s ease-out;
     display: flex;
@@ -27,16 +28,11 @@
     align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 
-    &:hover {
-        background-color: #444;
-        color: #f0f0f0;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-tablet) {
         display: flex;
         flex-direction: column;
-        font-size: 1.3rem;
-        padding: 1rem;
+        font-size: $base-font-size;
+        padding: $small-padding;
         text-align: center;
     }
 }
@@ -46,23 +42,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+    padding-left: $small-padding;
+    margin-bottom: $small-padding;
 }
 
 .name {
-    font-size: 2rem;
+    font-size: $heading-font-size;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .spec {
-    font-size: 1.2rem;
+    font-size: $base-font-size;
     font-weight: normal;
     margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-tablet) {
     .name {
         font-size: 1.6rem;
     }
