@@ -1,13 +1,13 @@
 import styles from "./Ed.module.scss";
 import { EdProps } from "./types/Ed.types";
 import EduCard from "@/components/EduCard/EduCard";
-import hilelle from "@/assets/images/hillel.png";
+import hilell from "@/assets/images/hillel.png";
 
 export default function Ed({}: EdProps) {
   return (
     <section className={styles.Ep}>
       <EduCard
-        image={hilelle}
+        image={hilell}
         altText="Course Logo"
         institution="IT  School "
         date="2024"
