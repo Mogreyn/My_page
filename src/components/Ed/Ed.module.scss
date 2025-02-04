@@ -1,6 +1,6 @@
 @use "@/styles/variables.scss" as *;
 
-.Xp {
+.Ed {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +9,7 @@
     background-color: $primary-color;
     border-radius: $border-radius;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
     gap: $large-padding;
 
     @media (max-width: $breakpoint-tablet) {
