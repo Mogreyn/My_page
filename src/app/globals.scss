@@ -1,12 +1,13 @@
+@use "@/styles/variables.scss" as *;
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: $main-bg-color;
+  --foreground: $main-bg-color;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #3a3a3a;
-    --foreground: #ededed;
+    --background: $main-bg-color;
+    --foreground: $main-bg-color;
   }
 }
 

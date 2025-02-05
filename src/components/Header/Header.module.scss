@@ -17,7 +17,8 @@
     color: $text-color;
     padding: $base-padding;
     text-align: left;
-    width: 100%;
+    max-width: 1124px;
+    width: 100vw;
     font-size: $heading-font-size;
     font-weight: bold;
     border-radius: 20px;

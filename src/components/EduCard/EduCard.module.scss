@@ -3,10 +3,10 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 1124px;
     padding: 1.5rem;
-    background-color: #222;
-    border-radius: 10px;
+    background-color: $header-color;
+    border-radius: $border-radius;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out forwards;
 
