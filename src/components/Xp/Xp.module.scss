@@ -10,6 +10,7 @@
     border-radius: $border-radius;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     gap: $large-padding;
+    max-width: 1124px;
 
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column;

@@ -7,7 +7,8 @@
     padding: $large-padding;
     background-color: $primary-color; 
     color: $text-color; 
-    border-radius: 1rem;
+    border-radius: $border-radius;
+    max-width: 1124px;
 
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column-reverse;
