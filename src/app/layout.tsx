@@ -9,15 +9,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const { ref, inView } = useInView({
-    triggerOnce: true, 
-    threshold: 0.5,
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
     <html lang="en" data-lt-installed="true">
       <body>
         <Header />
-        <div ref={ref} className={inView ? "animate" : ""}>
+        <div ref={ref} className={`animate ${inView ? "in-view" : ""}`}>
           {children}
         </div>
       </body>
