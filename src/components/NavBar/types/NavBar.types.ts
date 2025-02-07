@@ -1,6 +1,6 @@
 export interface NavBarProps {
     className?: string;
     label?: string;
-    sectionIds: string;
+    sectionId: string;
     scrollPosition?: ScrollLogicalPosition;
     }
