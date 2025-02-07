@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./AboutMe.module.scss";
 import { AboutMeProps } from "./types/AboutMe.types";
 import Image from "next/image";

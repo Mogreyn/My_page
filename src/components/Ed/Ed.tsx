@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Ed.module.scss";
 import { EdProps } from "./types/Ed.types";
 import EduCard from "@/components/EduCard/EduCard";

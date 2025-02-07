@@ -14,20 +14,26 @@
 
 .header {
     background: $header-color;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
     color: $text-color;
-    padding: $base-padding;
-    text-align: left;
     max-width: 1124px;
     width: 100vw;
+    min-height: 100px;
+    padding: 1rem;
     font-size: $heading-font-size;
     font-weight: bold;
     border-radius: 20px;
     animation: fadeInHeader 1s ease-out;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
 
     @media (max-width: $breakpoint-tablet) {
         display: flex;
@@ -37,14 +43,27 @@
         text-align: center;
     }
 }
-
+.headerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+        
+    }
+}
 .nameBar {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: $small-padding;
-    margin-bottom: $small-padding;
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+        
+    }
 }
 
 .name {

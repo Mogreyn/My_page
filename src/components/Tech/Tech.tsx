@@ -1,3 +1,5 @@
+"use client";
+
 import { TechProps } from "./types/Tech.types";
 import styles from "./Tech.module.scss";
 import Image from "next/image";
