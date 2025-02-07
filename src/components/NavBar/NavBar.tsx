@@ -3,27 +3,22 @@
 import styles from "@/components/NavBar/NavBar.module.scss";
 import { NavBarProps } from "./types/NavBar.types";
 import Button from "@/components/Button/Button";
+import { NAV_ITEMS } from "@/config/navigation";
+import { useScrollTo } from "@/hooks/useScrollTo";
 
-export default function NavBar({}: NavBarProps) {
-  const scrollToSection = (
-    id: string,
-    position: ScrollLogicalPosition = "start"
-  ) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: position });
-    }
-  };
+export default function NavBar({
+}: NavBarProps) {
+  const { scrollToSection } = useScrollTo();
   return (
     <nav className={styles.navbar}>
-      <Button onClick={() => scrollToSection("about", "start")}>
-        About Me
-      </Button>
-      <Button onClick={() => scrollToSection("tech", "center")}>
-        Tech Stack
-      </Button>
-      <Button onClick={() => scrollToSection("xp", "start")}>My Journey</Button>
-      <Button onClick={() => scrollToSection("ed", "start")}>Learning</Button>
+      {NAV_ITEMS.map(({ sectionId, label, scrollPosition }) => (
+        <Button
+          key={sectionId}
+          onClick={() => scrollToSection(sectionId, scrollPosition)}
+        >
+          {label}
+        </Button>
+      ))}
     </nav>
   );
 }
