@@ -26,7 +26,7 @@ export default function Header({}: HeaderProps) {
             <span className={styles.spec}>FRONTEND DEVELOPER</span>
           </GradientText>{" "}
         </div>
-        <NavBar  />
+        <NavBar sectionId="home" />
 
       </div>
 
