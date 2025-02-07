@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Xp.module.scss";
 import { XpProps } from "./types/Xp.types";
 import JobCard from "../Job/Job";

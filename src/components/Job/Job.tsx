@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Job.module.scss";
 import Image from "next/image";
 import { JobProps } from "./types/Job.types";

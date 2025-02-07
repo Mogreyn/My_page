@@ -1,0 +1,32 @@
+@use "@/styles/variables" as *;
+
+.btn {
+  display: inline-block;
+  padding: $small-padding $base-padding;
+  font-size: $middle-font-size;
+  font-family: $font-family-primary;
+  color: $text-color;
+  background: $primary-color;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $main-bg-color;
+    color: $text-color;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  // Адаптивность для мобильных устройств
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $base-font-size;
+    padding: 0.8rem 1.5rem; // Уменьшаем отступы
+    width: auto; // Делаем кнопки компактнее
+  }
+
+}

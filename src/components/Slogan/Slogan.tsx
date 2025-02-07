@@ -1,3 +1,5 @@
+"use client";
+
 import styles from './Slogan.module.scss';
 
 export interface SloganProps {

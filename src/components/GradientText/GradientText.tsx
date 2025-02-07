@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./GradientText.module.scss"; 
 import { GradientTextProps } from "./types/GradientText.types";
 import clsx from "clsx"; 

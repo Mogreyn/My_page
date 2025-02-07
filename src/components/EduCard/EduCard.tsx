@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./EduCard.module.scss";
 import Image from "next/image";
 import { EduCardProps } from "./types/EduCard.types";
