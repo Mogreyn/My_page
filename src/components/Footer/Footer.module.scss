@@ -1,0 +1,43 @@
+@use "@/styles/variables.scss" as *;
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    background: $header-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $text-color;
+    max-width: 1124px;
+    width: 100vw;
+    min-height: 100px;
+    padding: 1rem;
+    font-size: $heading-font-size;
+    font-weight: bold;
+    border-radius: 20px;
+    animation: fadeInHeader 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+
+    @media (max-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+        font-size: $base-font-size;
+        padding: $small-padding;
+        text-align: center;
+    }
+}
