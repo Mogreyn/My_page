@@ -18,7 +18,7 @@ export default function ContactButtons() {
       </Button>
 
       <Button asChild>
-        <a href="https://www.linkedin.com/in/aleksandr-vilhelmov" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/aleksandr-vilgelmov" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="mr-2" /> LinkedIn
         </a>
       </Button>
