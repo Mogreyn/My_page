@@ -8,15 +8,18 @@
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
-  height: 50px;
   border-radius: $border-radius;
+  gap: $base-padding;
   @media screen and (max-width: $breakpoint-tablet) {
     width: 100%;
     background-color: transparent;
     
   }
   @media screen and (max-width: $breakpoint-mobile) {
-    display: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+    padding: 0;
     
   }
 }
