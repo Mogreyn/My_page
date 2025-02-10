@@ -1,6 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import "./globals.scss";
 
 export default function RootLayout({
@@ -20,6 +21,9 @@ export default function RootLayout({
         <div ref={ref} className={`animate ${inView ? "in-view" : ""}`}>
           {children}
         </div>
+        <section id="contact">
+          <Footer />
+        </section>
       </body>
     </html>
   );
