@@ -10,7 +10,10 @@
     --foreground: $main-bg-color;
   }
 }
+*{
+  outline: 1px solid green;
 
+}
 html,
 body {
   min-height: 100vh;

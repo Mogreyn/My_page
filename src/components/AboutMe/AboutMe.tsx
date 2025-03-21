@@ -12,7 +12,7 @@ export default function AboutMe({}: AboutMeProps) {
         <div className={styles.aboutMeContent}>
           <h2 className={styles.title}>ABOUT ME</h2>
           <p className={styles.text}>
-            I’m a frontend developer who loves turning ideas into clean,
+            I&apos;m a frontend developer who loves turning ideas into clean,
             functional, and visually appealing web experiences. I enjoy working
             with modern technologies and continuously improving my skills to
             create user-friendly and engaging applications. Always eager to take
